@@ -8,7 +8,7 @@ import Frame6 from '../public/Frame6.png';
 
 export const BrandDisplay = () => {
     return(
-        <section id="brandDisplay" className='w-screen py-12 bg-[#111010]' >
+        <section id="brandDisplay" className='w-full py-12 bg-[#111010]' >
             <div className='container mx-auto w-full flex items-center justify-between gap-5 '>
                 <div className='hover:cursor-pointer w-[250px] h-[85px] bg-[#2B2B2B] flex items-center justify-center'>
                     <Image src={Frame} objectFit="contain"  />

@@ -11,8 +11,8 @@ export const Navbar = ()=>{
         <nav className="flex z-50  py-5 items-center justify-between w-[100%] h-auto" >
             <Image src={Logo} width={168} height={41} />
             <ul className='flex gap-5 uppercase text-wwhite text-[14px]' >
-              {['watches','mens', 'womens', 'new arrivals', 'featured', 'sale'].map(link=>(
-                <li><a href='#'>{link}</a></li>
+              {['watches','mens', 'womens', 'new arrivals', 'featured', 'sale'].map((link, index)=>(
+                <li key={index} ><a href='#'>{link}</a></li>
               ))}
             </ul>
             <ul className='flex gap-5'>

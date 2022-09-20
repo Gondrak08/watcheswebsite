@@ -10,7 +10,7 @@ import Watch3 from '../public/watch3.svg';
 
 export const Header=()=>{
     return(
-        <header className='w-screen h-[75vh] bg-wblack relative  ' >
+        <header className='w-full h-[75vh] bg-wblack relative  ' >
           
 
             <section className='absolute z-50 w-full ' >
