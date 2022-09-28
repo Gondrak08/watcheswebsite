@@ -18,7 +18,7 @@ export default function Home() {
     <div className='w-full h-full bg-wblack'>
       <Header />
       <BrandDisplay/>
-      <PromotionDisplay/>
+      {/* <PromotionDisplay/> */}
       <NewProduct/>
       <HeroSecond/>
       <Offers/>
