@@ -26,14 +26,14 @@ export const BlogSection=()=>{
         <section className="w-full h-full">
             <div className="container mx-auto py-8 flex flex-col gap-12">
                 <div className="texts flex flex-col gap-5 items-center text-center w-full">
-                    <h3 className="text-[45px]  text-wbrown uppercase">
+                    <h3 className="text-[35px] md:text-[45px]  text-wbrown uppercase">
                         blog updates
                     </h3>
-                    <span className="font-jost text-[20px] text-wwhite opacity-[0.7]  max-w-[658px] w-full">
+                    <span className="font-jost text-[14px] md:text-[20px] text-wwhite opacity-[0.7]  max-w-[658px] w-full">
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual.
                     </span>
                 </div>
-                <div className='grid grid-cols-3 gap-8'>
+                <div className='grid md:grid-cols-3 gap-8 px-5 md:px-0'>
                     {
                         Posts.map((item,index)=>(
                             <div className='card flex flex-col w-full h-full bg-[#111010]'key={index} >

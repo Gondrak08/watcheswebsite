@@ -98,16 +98,16 @@ export const NewProduct=()=>{
         <section className="w-full h-full py-5">
             <div className="container mx-auto" >
                 <div  className="text-center py-3 " >
-                    <h3 className="text-[50px] font-singika uppercase text-wpinkdark text-center " >new arrivals</h3>
-                    <span className="text-jost text-[20px] text-white opacity-[0.7]" >
+                    <h3 className="text-[35px] md:text-[40px] lg:text-[50px] font-singika uppercase text-wpinkdark text-center " >new arrivals</h3>
+                    <span className="text-jost  md:text-[14px] lg:text-[20px] text-white opacity-[0.7]" >
                         In publishing and graphic design, Lorem ipsum is a placeholder text
-                        <br/> s
+                        <br className='hidden md:inline' /> 
                         commonly used to demonstrate the visual.
                     </span>
                 </div>
             </div>
             <div className="container mx-auto h-full" >
-                <div className='grid grid-cols-4 gap-2' >
+                <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-2 px-5 md:px-0 ' >
                     {watchList.map((item, index)=>(
                         <div key={index} className={`Card relative w-full h-full border-[0.1em] border-black hover:border-b-white   hover:cursor-pointer
                         ${item.highlight ? 'rounded-tl-[80px] bg-[url("../public/bgcard.png")] bg-contain bg-no-repeat bg-center bg-[#D8A688] ' :''}`

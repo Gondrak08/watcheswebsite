@@ -15,7 +15,7 @@ import {
 
 export default function Home() {
   return (
-    <div className='w-full h-full bg-wblack'>
+    <div className=' w-full h-full bg-wblack'>
       <Header />
       <BrandDisplay/>
       {/* <PromotionDisplay/> */}

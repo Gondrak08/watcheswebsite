@@ -10,7 +10,7 @@ export const BrandDisplay = () => {
     console.log(Frame)
     return(
         <section id="brandDisplay" className='w-full py-12 bg-[#111010]' >
-            <div className='container mx-auto w-full flex items-center justify-between gap-5 '>
+            <div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap items-center justify-center md:justify-between gap-5 '>
                 <div className='hover:cursor-pointer w-[250px] h-[85px] bg-[#2B2B2B] flex items-center justify-center'>
                     <Image src={Frame} width={Frame.width}  height={Frame.height} objectFit="contain"  />
                 </div>

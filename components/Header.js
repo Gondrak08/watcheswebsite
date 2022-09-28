@@ -21,17 +21,17 @@ export const Header=()=>{
                 </section>
             </section>
             
-            <div className='h-[100%] w-[100%] bg-no-repeat bg-cover  bg-center  bg-[url(../public/hero2.png)]' >
+            <div className='h-[100%] w-[100%] bg-no-repeat   bg-center  bg-none md:bg-[url(../public/hero2.png)]' >
                     <div className='container mx-auto items-center flex h-full'>
                         <div className='h-[fit-content]  w-[fit-content] justify-self-center content flex flex-col items-start justify-center gap-5'>
-                            <div id="texts" className=' flex flex-col gap-3 items-center justify-center text-white text-center'>
-                                <h1> 
+                            <div id="texts" className='flex flex-col gap-3 items-center justify-center text-white text-center'>
+                                <h1 className='text-[35px] md:text-[50px] lg:text-[60px]' > 
                                     up to 50% off
                                 </h1>
-                                <h2>
+                                <h2 className='text-[25px] lg:text-[45px]' >
                                     super luxury, super watches
                                 </h2>
-                                <span  className='max-w-[525px] w-full' >
+                                <span  className='max-w-[525px] w-full text-[14px] md:text-[16px]' >
                                     In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual.
                                 </span>
                                 <a className='hover:cursor-pointer py-[13px] px-[33px] my-3 bg-wbrown uppercase' >

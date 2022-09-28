@@ -10,8 +10,8 @@ import Google from '../public/googleLogo.png';
 export const Footer=()=>{
     return(
         <footer className="w-full h-full bg-[#111010]">
-            <div className="container mx-auto w-full h-full py-16">
-                <section className="grid grid-cols-4 gap-8" >
+            <div className="container mx-auto w-full h-full py-16 px-5 md:px-0">
+                <section className="grid md:grid-cols-3 lg:grid-cols-4 gap-8" >
                     <div className="col-1 flex flex-col items-start gap-2 text-[14px] text-wwhite font-jost">
                         <Image src={Logo} />
                         <span className='font-signika ' >
@@ -25,7 +25,7 @@ export const Footer=()=>{
                         </span>
                     </div>
  
-                    <div className="col-2 text-wwhite pl-8 flex flex-col gap-3 " >
+                    <div className="col-2 text-wwhite md:pl-8 flex flex-col gap-3 " >
                         <span className='font-jost font-[700] text-[22px] mt-1' >Discover</span>
                         <ul className='flex flex-col gap-3' >
                             <li>
@@ -80,7 +80,7 @@ export const Footer=()=>{
             </div>
 
             <section className='w-full border-0 border-t-[0.5px] border-t-white border-opacity-[0.3] ' >
-                <div className='container mx-auto dev-content flex justify-between items-center text-white py-5'>
+                <div className='container mx-auto dev-content flex flex-wrap gap-2 md:gap-0 justify-center md:justify-between items-center text-white py-5'>
                     <span className='font-jost text-[19px] text-wwhite' >
                         Vitor Alecrim All Right Reserved, 2022    
                     </span>
