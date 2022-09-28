@@ -82,11 +82,10 @@ const Watchs = [
 ];
 export const NewProduct=()=>{
     const [watchList, setWatchList] = useState(Watchs);
-    const [isClicked, setIsClicked] = useState(false);
-    
+     
     useEffect(()=>{
         setWatchList(Watchs)
-    },[])
+    },[]);
     
     const ratingChanged = (newRating)=>{console.log(newRating)};
     const handleLike=(e, index, card)=>{
@@ -94,7 +93,6 @@ export const NewProduct=()=>{
         newVal[index].isLiked = !card.isLiked;
         setWatchList(newVal);
     };
-    console.log(watchList);
 
     return(
         <section className="w-full h-full py-5">
@@ -111,7 +109,7 @@ export const NewProduct=()=>{
             <div className="container mx-auto h-full" >
                 <div className='grid grid-cols-4 gap-2' >
                     {watchList.map((item, index)=>(
-                        <div key={index} className={`Card relative w-full h-full outline hover:outline-[1px] hover:outline-white  hover:cursor-pointer
+                        <div key={index} className={`Card relative w-full h-full border-[0.1em] border-black hover:border-b-white   hover:cursor-pointer
                         ${item.highlight ? 'rounded-tl-[80px] bg-[url("../public/bgcard.png")] bg-contain bg-no-repeat bg-center bg-[#D8A688] ' :''}`
                         }>
                             <Image  src={item.img} layout="responsive" width={"100%"} height={"100%"} objectFit={item.highlight ? "contain" : "cover"} />

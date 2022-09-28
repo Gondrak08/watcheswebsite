@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Jost:wght@300;400&family=Kranky&family=Signika+Negative:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Kranky&family=Poppins:wght@400;500;600;700&family=Signika+Negative:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,8 +22,8 @@ a {
 }
 
 .container{
-  max-width: 1100px;
-  width: 98%;
+  max-width: 1400px;
+  width: 100%;
 }
 
 #texts h1 {

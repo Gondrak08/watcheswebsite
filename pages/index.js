@@ -6,7 +6,11 @@ import {
   Header,
   BrandDisplay, 
   PromotionDisplay,
-  NewProduct
+  NewProduct,
+  HeroSecond,
+  Offers,
+  BlogSection,
+  Footer
 } from '../components/index';
 
 export default function Home() {
@@ -14,8 +18,12 @@ export default function Home() {
     <div className='w-full h-full bg-wblack'>
       <Header />
       <BrandDisplay/>
-      {/* <PromotionDisplay/> */}
-      <NewProduct />
+      <PromotionDisplay/>
+      <NewProduct/>
+      <HeroSecond/>
+      <Offers/>
+      <BlogSection/>
+      <Footer/>
     </div>
   )
 }

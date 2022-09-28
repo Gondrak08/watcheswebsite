@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react';
 import Image from 'next/image';
 import CountDown from './CountDown';
 import Promotion from '../public/promotion.png';
@@ -5,6 +6,11 @@ import Promotion2 from '../public/promotion2.png';
 import Promotion3 from '../public/promotion3.png';
 
 export const PromotionDisplay = () => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(()=>{
+        if(!isMounted) setIsMounted(true);
+    },[])
 
     return (
         <section className='w-full h-full py-5 ' >
@@ -68,7 +74,7 @@ export const PromotionDisplay = () => {
                                     }
                                 </div>
                                 <div className='bg-white py-2'>
-                                    <CountDown date={`2022-12-24T00:00:00`} />
+                                    <CountDown date="2022-12-24T00:00:00" />
                                 </div>
                             </a>
                         )

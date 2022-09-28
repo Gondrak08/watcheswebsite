@@ -19,8 +19,8 @@ module.exports = {
       fontFamily:{
         'kranky':['Kranky'],
         'signika':['Signika Negative'],
-        'jost':['Jost']
-
+        'jost':['Jost'],
+        'poppins':['Poppins']
       }
     },
   },
