@@ -1,11 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
-
-loaders: [
-  { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
-]
+  swcMinify: true
 }
 
 module.exports = nextConfig
