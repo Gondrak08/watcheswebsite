@@ -65,7 +65,7 @@ export const Footer=()=>{
                         <span className="font-jost font-[700] text-[22px] text-wwhite mt-1">Newsletter</span>
                         <div className="flex flex-col gap-5">
                             <span className="font-jost font-[500] text-[18px] text-wwhite" >
-                                Enter your email and We'll Send you more information
+                                Enter your email and Well Send you more information
                             </span>
                             <div className="relative  h-[3.5em]" >
                                 <input type="text" placeholder="Your Email" 
