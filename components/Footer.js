@@ -47,10 +47,10 @@ export const Footer=()=>{
                         <span className='font-jost font-[700] text-[22px] mt-1' >Customer Care</span>
                         <ul className='flex flex-col gap-3' >
                             <li>
-                                Watch Instructions & Care
+                                Watch Instructions {'&'} Care
                             </li>
                             <li>
-                                Warranty & Repairs
+                                Warranty {'&'} Repairs
                             </li>
                             <li>
                                 Order Status
