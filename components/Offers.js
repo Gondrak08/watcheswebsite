@@ -38,9 +38,10 @@ export const Offers=()=>{
                 <div className='w-full h-full grid grid-cols-4 gap-5 md:gap-12  lg:gap-20 '>
                     {
                         images ? images.map((item, index)=>(
-                            <div className='card p-5 '>
+                            <div key={index} className='card p-5 '>
                                 {console.log(item.image.width)}
-                                <Image src={item.image.src} 
+                                <Image 
+                                src={item.image.src} 
                                 width={item.image.width} 
                                 height={item.image.height}
                                 objectFit='contain'
