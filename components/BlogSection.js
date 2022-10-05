@@ -39,6 +39,7 @@ export const BlogSection=()=>{
                             <div className='card flex flex-col w-full h-full bg-[#111010]'key={index} >
                                 <div>
                                     <Image 
+                                        alt='relogio'
                                         src={item.image.src} 
                                         width={item.image.width} 
                                         height={item.image.height} 
