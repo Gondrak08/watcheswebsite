@@ -13,7 +13,7 @@ export const Footer=()=>{
             <div className="container mx-auto w-full h-full py-16 px-5 md:px-0">
                 <section className="grid md:grid-cols-3 lg:grid-cols-4 gap-8" >
                     <div className="col-1 flex flex-col items-start gap-2 text-[14px] text-wwhite font-jost">
-                        <Image src={Logo} />
+                        <Image priority={true} src={Logo} />
                         <span className="font-signika" >
                             Lorem Ipsum is simply dummy typesetting industry. a type specimen book.
                         </span>
@@ -88,7 +88,7 @@ export const Footer=()=>{
                     <div className="flex gap-8 items-center" >
                         {[Fb, Insta, Twitter, Google].map((item, index)=>(
                             <a key={index} className="w-[fit-content] h-[fit-content] hover:cursor-pointer " >
-                                <Image alt="logo" src={item.src} width={item.width} height={item.height} />
+                                <Image priority={true} alt="logo" src={item.src} width={item.width} height={item.height} />
                             </a>
                         ))}
                     </div>       

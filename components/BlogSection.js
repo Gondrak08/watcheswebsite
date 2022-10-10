@@ -38,7 +38,8 @@ export const BlogSection=()=>{
                         Posts.map((item,index)=>(
                             <div className='card flex flex-col w-full h-full bg-[#111010]'key={index} >
                                 <div>
-                                    <Image 
+                                    <Image
+                                        priority={true} 
                                         alt='relogio'
                                         src={item.image.src} 
                                         width={item.image.width} 

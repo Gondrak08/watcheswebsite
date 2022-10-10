@@ -1,4 +1,3 @@
-import Image from 'next/image';
 const HeroSecond=()=>{
     return(
         <section className='w-full h-[25em] md:h-[45em] bg-[url("../public/bghero.png")] bg-no-repeat bg-cover  bg-center'>

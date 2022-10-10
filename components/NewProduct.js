@@ -112,7 +112,7 @@ export const NewProduct=()=>{
                         <div key={index} className={`Card relative w-full h-full border-[0.1em] border-black hover:border-b-white   hover:cursor-pointer
                         ${item.highlight ? 'rounded-tl-[80px] bg-[url("../public/bgcard.png")] bg-contain bg-no-repeat bg-center bg-[#D8A688] ' :''}`
                         }>
-                            <Image  src={item.img} layout="responsive" width={"100%"} height={"100%"} objectFit={item.highlight ? "contain" : "cover"} />
+                            <Image priority={true} src={item.img} layout="responsive" width={"100%"} height={"100%"} objectFit={item.highlight ? "contain" : "cover"} />
                            
                                 < AiFillHeart  color={item.isLiked ? "red" :  "white"} 
                                 className='absolute top-0 right-0 m-5 w-[28px] h-[28px]'  

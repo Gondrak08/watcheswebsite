@@ -27,15 +27,14 @@ export const MobNavbar = (prop)=>{
               ))}
           </ul>
           <ul className='flex justify-center mt-5 gap-5'>
-              <Image src={User} width={32} height={32} className="hover:opacity-[0.7] hover:cursor-pointer" />
-              <Image src={Heart} width={32} height={32} className="hover:opacity-[0.7] hover:cursor-pointer"/>
-              <Image src={Search} width={32} height={32} className="hover:opacity-[0.7] hover:cursor-pointer"/>
+              <Image priority={true} src={User} width={32} height={32} className="hover:opacity-[0.7] hover:cursor-pointer" />
+              <Image priority={true} src={Heart} width={32} height={32} className="hover:opacity-[0.7] hover:cursor-pointer"/>
+              <Image priority={true} src={Search} width={32} height={32} className="hover:opacity-[0.7] hover:cursor-pointer"/>
           </ul>
         </div>
     </div>
   )
-}
-
+};
 
 export const Navbar = ()=>{
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +46,7 @@ export const Navbar = ()=>{
   return(
       <div className='responsive' >
         <nav className="hidden md:flex z-50  py-5 items-center justify-between w-[100%] h-auto" >
-            <Image src={Logo} width={168} height={41} />
+            <Image priority={true} src={Logo} width={168} height={41} />
             <ul className='flex gap-5 uppercase text-wwhite text-[14px]' >
               {['watches','mens', 'womens', 'new arrivals', 'featured', 'sale'].map((link, index)=>(
                 <li key={index} ><a href='#'>{link}</a></li>
@@ -70,6 +69,6 @@ export const Navbar = ()=>{
         {isOpen && <MobNavbar handleModal={handleModal}/> }
       </div>
     )
-}
+};
 
 export default Navbar;

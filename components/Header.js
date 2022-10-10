@@ -50,15 +50,15 @@ export const Header=()=>{
                                     flex 
                                     items-center 
                                     justify-center' >
-                                    <Image alt='relogio' className='image' src={Watch1}  width={"100%"}  height={"100%"} objectFit="contain"  />
+                                    <Image priority={true} alt='relogio' className='image' src={Watch1}  width={"100%"}  height={"100%"} objectFit="contain"  />
                                 </div>
                                 <div className='bg-wblacktotal hover:cursor-pointer 
                                 w-[92px] h-[117.74px] flex items-center justify-center'>
-                                    <Image alt='relogio'  className='image' src={Watch2} width={"100%"}  height={"100%"}  objectFit="contain" />
+                                    <Image priority={true} alt='relogio'  className='image' src={Watch2} width={"100%"}  height={"100%"}  objectFit="contain" />
                                 </div>
                                 <div className='bg-wblacktotal hover:cursor-pointer 
                                 w-[92px] h-[117.74px] flex items-center justify-center'>
-                                    <Image  alt='relogio' className='image' src={Watch3} width={"100%"}  height={"100%"} objectFit="contain"  />
+                                    <Image priority={true}  alt='relogio' className='image' src={Watch3} width={"100%"}  height={"100%"} objectFit="contain"  />
                                 </div>
                             </div>
                         </div>

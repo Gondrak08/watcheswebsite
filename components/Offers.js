@@ -40,7 +40,8 @@ export const Offers=()=>{
                         images ? images.map((item, index)=>(
                             <div key={index} className='card p-5 '>
                                 {console.log(item.image.width)}
-                                <Image 
+                                <Image
+                                priority={true} 
                                 src={item.image.src} 
                                 width={item.image.width} 
                                 height={item.image.height}
