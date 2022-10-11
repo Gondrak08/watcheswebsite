@@ -1,4 +1,3 @@
-import {useState, useEffect} from 'react';
 import Image from 'next/image';
 import CountDown from './CountDown';
 import Promotion from '../public/promotion.png';
@@ -6,12 +5,6 @@ import Promotion2 from '../public/promotion2.png';
 import Promotion3 from '../public/promotion3.png';
 
 export const PromotionDisplay = () => {
-    const [isMounted, setIsMounted] = useState(false);
-
-    useEffect(()=>{
-        if(!isMounted) setIsMounted(true);
-    },[])
-
     return (
         <section className='w-full h-full py-5 ' >
             <div className='container mx-auto'>
@@ -35,27 +28,27 @@ export const PromotionDisplay = () => {
                         }].map((item, index) => (
                             <a key={index} className='flex flex-col h-[100%] ' >
                                 <div className='relative text-white h-[fit-content]' >
-                                    <Image src={item.img} layout="responsive" objectFit="contain" />
+                                    <Image priority={true} src={item.img} layout="responsive" objectFit="contain" />
                                     {
-                                        item.button ? (
-                                            <div className='
-                                            absolute 
+                                        item.button && item.title && item.text ? (
+                                            <div className='absolute 
                                             top-[20%] 
                                             bottom-[50%] 
                                             left-[5%] 
                                             right-0
                                             flex
                                             flex-col
-                                            
                                             h-[fit-content]
                                             w-[fit-content]
                                             text-center
-                                            items-center
-                                            ' >
+                                            items-center'
+                                            >
                                                 <h4 className='font-kranky text-[29px] uppercase ' 
                                                 >{item.title}</h4>
                                                 <span className='font-signika text-[30px] uppercase w-[151px] leading-[139.5%] ' >{item.text}</span>
-                                                <a className='font-jost text-[16px] p-[0.3em] max-w-[115px] w-full self-center bg-wbrown' >Buy Now!</a>
+                                                <button className='font-jost text-[16px] p-[0.3em] max-w-[115px] w-full self-center bg-wbrown' >
+                                                    Buy Now!
+                                                </button>
                                             </div>
                                         ) : (
                                             <div className='absolute 

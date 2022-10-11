@@ -1,7 +1,3 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-
 import {
   Header,
   BrandDisplay, 
@@ -18,7 +14,7 @@ export default function Home() {
     <div className=' w-full h-full bg-wblack'>
       <Header />
       <BrandDisplay/>
-      {/* <PromotionDisplay/> */}
+      <PromotionDisplay/>
       <NewProduct/>
       <HeroSecond/>
       <Offers/>
